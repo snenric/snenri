@@ -1,0 +1,24 @@
+using System;
+
+class MainClass 
+{
+  public static void Main (string[] args) 
+  {
+     double A, B, C, AC, BC, Sum;
+     Console.WriteLine("Точка А ");
+     A= Convert.ToDouble(Console.ReadLine());
+     Console.WriteLine("Точка B ");
+     B= Convert.ToDouble(Console.ReadLine());
+     Console.WriteLine("Точка C ");
+     C= Convert.ToDouble(Console.ReadLine());
+      AC=A-C;
+      AC=Math.Abs(AC);
+      BC=B-C;
+      BC=Math.Abs(BC);
+      Sum=Math.Abs(AC)+Math.Abs(BC);
+         Console.WriteLine("Длина АС: " + AC);
+         Console.WriteLine("Длина BC: " + BC);
+         Console.WriteLine("Длина отрезков: " + Sum);
+         Console.ReadKey();
+  }
+}
